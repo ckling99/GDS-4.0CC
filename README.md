@@ -39,7 +39,7 @@ docker run -p 4000:80 restaurant-app:latest
 ###### Do note that Port 80 is the port exposed on the docker container which we will bind to 4000 on the local machine
 
 &nbsp;
-### A short summary on how i would design and deploy this app using cloud services and my decisions and considerations i have made when designing the solution. 
+## A short summary on how i would design and deploy this app using cloud services and my decisions and considerations i have made when designing the solution. 
 
 I would deploy this on a cloud platform using a server architecture due to the higher performance it provides. While a serverless architecture would be better for scaling fast if there are a high concurrent number of users, I do not see any reason if the main purpose of this application is for downloading and viewing data, there may not be a need for rapid scaling. 
 
@@ -50,3 +50,7 @@ One of the key benefits of using a container instead of a virtual machine is tha
 
 In the event that there is significantly high traffic and that upgrading a server may be more costly through vertical scaling, I can switch up and add a load balancer to distribute the workload across multiple servers or use cloud orchestration tools such as Kubernetes to scale horizontally.
 
+&nbsp;
+
+## Architecture Diagram
+![Architecture Diagram](https://github.com/ckling99/GDS-4.0CC/blob/main/Architecture%20Diagram.drawio.png)
